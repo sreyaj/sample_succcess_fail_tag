@@ -1,11 +1,11 @@
 resources:
 
-  - name: myProdSyncRepo
-    type: syncRepo
-    integration: sreyaj-github
-    pointer:
-      sourceName: sreyaj/sample_node_new
-      branch: master
+ # - name: myProdSyncRepo
+#    type: syncRepo
+ #   integration: sreyaj-github
+  #  pointer:
+   #   sourceName: sreyaj/sample_node_new
+    #  branch: master
       
   - name: new-imagetag
     type: image
