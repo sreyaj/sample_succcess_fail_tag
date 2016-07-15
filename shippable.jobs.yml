@@ -20,10 +20,10 @@ jobs:
      # - echo 'testing invalid command'
     #  - testfaills
 
-  - name: prodYmlSync    
-    type: rSync
-    steps:
-      - GET: myProdSyncRepo
+ # - name: prodYmlSync    
+ #   type: rSync
+  #  steps:
+   #   - GET: myProdSyncRepo
 
 #  - name: script-piperun90
  #   type: runSh
