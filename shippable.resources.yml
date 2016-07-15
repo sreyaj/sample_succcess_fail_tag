@@ -2,7 +2,7 @@ resources:
 
   - name: myProdSyncRepo
     type: syncRepo
-    integration: github
+    integration: sreyaj-github
     pointer:
       sourceName: sreyaj/sample_node_new
       branch: master
