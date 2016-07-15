@@ -8,12 +8,12 @@ jobs:
       #- ./party.sh
     #  - ls
      # - pwd
-  - name : deployecsfail167
-    type: ecsDeploy
-    steps:
-      - GET: ecsfailmanifest11
-      - GET: resoproecsfail
-      - GET: trigger-dv-man
+ # - name : deployecsfail167
+  #  type: ecsDeploy
+  #  steps:
+   #   - GET: ecsfailmanifest11
+    #  - GET: resoproecsfail
+    #  - GET: trigger-dv-man
    # on_failure:
       #- ./party.sh
     #  - echo 'failed'
