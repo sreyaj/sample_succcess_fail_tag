@@ -1,9 +1,10 @@
 resources:
-  - name: sample-script1
-    type: gitRepo
-    integration: shiphitchcock4-github
+
+  - name: myProdSyncRepo
+    type: syncRepo
+    integration: github
     pointer:
-      sourceName: shiphitchcock4/sample-script
+      sourceName: sreyaj/sample_node_new
       branch: master
       
   - name: new-imagetag
@@ -16,11 +17,4 @@ resources:
       versionName: "latest"
       #tag: latest
       
-#  - name: resoproecsfail
- #   type: ecsCluster
-  #  integration: ship-awsnew
-  #  pointer:
-   #   sourceName: "default" #name of the cluster we are deploying
-  #  version:
-   #   region: "us-west-2" 
- 
+    
