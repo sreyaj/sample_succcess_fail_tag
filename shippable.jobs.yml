@@ -8,11 +8,11 @@ jobs:
       #- ./party.sh
     #  - ls
      # - pwd
-  - name : deployecsfail167
-    type: ecsDeploy
+  - name: deployecsfail167
+    type: manifest
     steps:
-      - GET: ecsfailmanifest11
-      - GET: resoproecsfail
+     # - GET: ecsfailmanifest11
+      #- GET: resoproecsfail
       - GET: trigger-dv-man
     #on_failure:
      # - ./party.sh
@@ -20,7 +20,10 @@ jobs:
      # - echo 'testing invalid command'
     #  - testfaills
 
-
+  - name: prodYmlSync    
+    type: rSync
+    steps:
+      - GET: myProdSyncRepo
 
 #  - name: script-piperun90
  #   type: runSh
