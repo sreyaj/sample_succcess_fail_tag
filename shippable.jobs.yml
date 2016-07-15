@@ -8,14 +8,14 @@ jobs:
       #- ./party.sh
     #  - ls
      # - pwd
- # - name : deployecsfail167
-  #  type: ecsDeploy
-  #  steps:
-   #   - GET: ecsfailmanifest11
-    #  - GET: resoproecsfail
-    #  - GET: trigger-dv-man
-   # on_failure:
-      #- ./party.sh
+  - name : deployecsfail167
+    type: ecsDeploy
+    steps:
+      - GET: ecsfailmanifest11
+      - GET: resoproecsfail
+      - GET: trigger-dv-man
+    #on_failure:
+     # - ./party.sh
     #  - echo 'failed'
      # - echo 'testing invalid command'
     #  - testfaills
