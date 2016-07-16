@@ -4,6 +4,7 @@ jobs:
     steps:
       - GET: trigger-dv-man
       - GET: new-imagetag
+      - TASK: managed
    # on_failure:
       #- ./party.sh
     #  - ls
@@ -14,11 +15,14 @@ jobs:
      # - GET: ecsfailmanifest11
       #- GET: resoproecsfail
       - GET: trigger-dv-man
+      - GET: new-imagetag
+      - TASK: managed
     #on_failure:
      # - ./party.sh
     #  - echo 'failed'
      # - echo 'testing invalid command'
     #  - testfaills
+    
 
  # - name: prodYmlSync    
  #   type: rSync
