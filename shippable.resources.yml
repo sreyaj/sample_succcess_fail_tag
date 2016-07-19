@@ -7,14 +7,14 @@ resources:
    #   sourceName: sreyaj/sample_node_new
     #  branch: master
       
-  - name: new-imagetag
-    type: image
-    integration: ship4-docker
-    pointer:
-      sourceName: "shiphitchcock4/hitchcock4_sample_node"
-      isPull: false
-    seed:
-      versionName: "latest"
+ - name: new-imagetag
+   type: image
+   integration: ship4-docker
+   pointer:
+     sourceName: "shiphitchcock4/hitchcock4_sample_node"
+     isPull: false
+   seed:
+     versionName: "latest"
       #tag: latest
       
     
