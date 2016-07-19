@@ -2,8 +2,8 @@ jobs:
   - name: ecsfailmanifest11
     type: manifest
     steps:
-      - GET: trigger-dv-man
-      - GET: new-imagetag
+      - IN: trigger-dv-man
+      - IN: new-imagetag
       - TASK: managed
    # on_failure:
       #- ./party.sh
@@ -14,8 +14,8 @@ jobs:
     steps:
      # - GET: ecsfailmanifest11
       #- GET: resoproecsfail
-      - GET: trigger-dv-man
-      - GET: new-imagetag
+      - IN: trigger-dv-man
+      - IN: new-imagetag
       - TASK: managed
     #on_failure:
      # - ./party.sh
