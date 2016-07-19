@@ -16,5 +16,14 @@ resources:
    seed:
      versionName: "latest"
       #tag: latest
+ - name: new-imagetag1234
+   type: image
+   integration: ship4-docker
+   pointer:
+     sourceName: "shiphitchcock4/hitchcock4_sample_node"
+     isPull: false
+   seed:
+     versionName: "latest"
+      
       
     
