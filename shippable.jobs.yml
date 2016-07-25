@@ -17,6 +17,10 @@ jobs:
       - IN: trigger-dv-man
       - IN: new-imagetag
       - TASK: managed
+    on_success:
+      - NOTIFY: myEmail
+    on_failure:
+      - NOTIFY: mySlack
     #on_failure:
      # - ./party.sh
     #  - echo 'failed'
