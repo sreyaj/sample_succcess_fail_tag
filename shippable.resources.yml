@@ -27,11 +27,11 @@ resources:
       
  - name: mySlack
    type: notification
-   integration: sreya_slack
+   integration: ship-slack1
    pointer:
      recipients:
        - "#random"
-       - "@pvt-channel"
+      # - "@pvt-channel"
 
  - name: myEmail
    type: notification
